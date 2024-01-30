@@ -50,3 +50,13 @@ C:\Users\Steph\PosSystem\pos-system\obj\Debug\netcoreapp3.1\staticwebassets\pos-
 C:\Users\Steph\PosSystem\pos-system\obj\Debug\netcoreapp3.1\pos-system.dll
 C:\Users\Steph\PosSystem\pos-system\obj\Debug\netcoreapp3.1\pos-system.pdb
 C:\Users\Steph\PosSystem\pos-system\obj\Debug\netcoreapp3.1\pos-system.genruntimeconfig.cache
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Steph\PosSystem\pos-system\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
