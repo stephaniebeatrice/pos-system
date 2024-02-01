@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import AddProduct from './AddProduct';
 import './Products.css'
 
-function ProductTable() {
+function Products() {
 
   const [seen, setSeen] = useState(false)
 
@@ -87,4 +87,4 @@ function ProductTable() {
   );
 }
 
-export default ProductTable;
+export default Products;

@@ -1,8 +1,20 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import AddCustomer from './AddCustomer'
 
 function Customers() {
+
+  const [seen, setSeen] = useState(false)
+
+    function togglePop () {
+        setSeen(!seen);
+  
+    };
+
   return (
+    <div>
+     <button onClick={togglePop}>Add Product</button>
+            {seen ? <AddCustomer toggle={togglePop} /> : null}
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -41,6 +53,7 @@ function Customers() {
         </tr>
       </tbody>
     </Table>
+    </div>
   );
 }
 

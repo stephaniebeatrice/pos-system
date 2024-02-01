@@ -1,8 +1,19 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import AddSupplier from './AddSupplier'
 
 function Suppliers() {
+  const [seen, setSeen] = useState(false)
+
+    function togglePop () {
+        setSeen(!seen);
+  
+    }; 
   return (
+    <div>
+            <button onClick={togglePop}>Add Supplier</button>
+            {seen ? <AddSupplier toggle={togglePop} /> : null}
+
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -41,6 +52,7 @@ function Suppliers() {
         </tr>
       </tbody>
     </Table>
+    </div>
   );
 }
 

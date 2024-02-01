@@ -1,9 +1,21 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import AddCategory from './AddCategory'
 import './Products.css'
 
 function Categories() {
+
+  const [seen, setSeen] = useState(false)
+
+    function togglePop () {
+        setSeen(!seen);
+  
+    };
+
   return (
+    <div>
+       <button onClick={togglePop}>Add Category</button>
+            {seen ? <AddCategory toggle={togglePop} /> : null}
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -37,6 +49,7 @@ function Categories() {
         </tr>
       </tbody>
     </Table>
+    </div>
   );
 }
 
