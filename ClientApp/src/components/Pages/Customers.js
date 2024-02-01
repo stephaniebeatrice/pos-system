@@ -7,9 +7,9 @@ function Customers() {
       <thead>
         <tr>
           <th>#</th>
-          <th>Supplier Name</th>
-          <th>Company Name</th>
-          <th>Supplier e-mail</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>E-mail Address</th>
           <th>Phone number</th>
           <th>Address</th>
         </tr>
@@ -17,7 +17,7 @@ function Customers() {
       <tbody>
         <tr>
           <td>1</td>
-          <td>Mark</td>
+          <td>Otto</td>
           <td>Otto</td>
           <td>@mdo</td>
           <td>@mdo</td>
@@ -25,16 +25,16 @@ function Customers() {
         </tr>
         <tr>
           <td>2</td>
-          <td>Jacob</td>
           <td>Thornton</td>
+          <td>Otto</td>
           <td>@fat</td>
           <td>@mdo</td>
           <td>@mdo</td>
         </tr>
         <tr>
           <td>3</td>
-          <td>Larry the Bird</td>
           <td>@twitter</td>
+          <td>Otto</td>
           <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
