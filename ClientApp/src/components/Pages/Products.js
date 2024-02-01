@@ -1,9 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Table from 'react-bootstrap/Table';
+import AddProduct from './AddProduct';
 import './Products.css'
 
 function ProductTable() {
+
+  const [seen, setSeen] = useState(false)
+
+    function togglePop () {
+        setSeen(!seen);
+  
+    };
+
   return (
+    <div>
+     <button onClick={togglePop}>Add Product</button>
+            {seen ? <AddProduct toggle={togglePop} /> : null}
+
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -18,6 +31,8 @@ function ProductTable() {
           <th>Category</th>
           <th>Manufacturing Date</th>
           <th>Expiring Date</th>
+          <th>Update</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -33,6 +48,8 @@ function ProductTable() {
           <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
+          <td>Update</td>
+          <td>Delete</td>
         </tr>
         <tr>
           <td>2</td>
@@ -46,6 +63,8 @@ function ProductTable() {
           <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
+          <td>Update</td>
+          <td>Delete</td>
         </tr>
         <tr>
           <td>3</td>
@@ -59,9 +78,12 @@ function ProductTable() {
           <td>@mdo</td>
           <td>@mdo</td>
           <td>@mdo</td>
+          <td>Update</td>
+          <td>Delete</td>
         </tr>
       </tbody>
     </Table>
+    </div>  
   );
 }
 

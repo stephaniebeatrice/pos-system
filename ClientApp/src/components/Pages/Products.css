@@ -1,10 +1,17 @@
 .table{
     color: black;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 300px;
+    width: 100%;
 }
 
 .table th,
 .table td {
   color: black;
+}
+
+button{
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 50%;
 }

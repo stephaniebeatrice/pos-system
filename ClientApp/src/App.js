@@ -13,10 +13,11 @@ import Orders from './components/Pages/Orders'
 import Reports from './components/Pages/Reports' 
 
 function App() {
+  
   return (
     <div className='grid-container'>
       <Header />
-      <Sidebar />
+       <Sidebar />  
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/products" element={<Products />}></Route>
@@ -27,7 +28,7 @@ function App() {
         <Route path="/orders" element={<Orders />}></Route>
         <Route path="/reports" element={<Reports />}></Route> 
       </Routes>
-      </div>
+        </div>
 
   );
 }
