@@ -3,6 +3,8 @@ import { Button, Dropdown, Form } from 'react-bootstrap';
 
 function AddProduct() {
   return (
+    <div classname = "modal">
+    <div classname = "overlay">
     <Form>
       <div className="mbsc-grid mbsc-grid-fixed">
         <div className="mbsc-form-group">
@@ -62,11 +64,16 @@ function AddProduct() {
                 </div>
               </div>
               <Button>Submit</Button>
+              <button className="close-modal" onClick={toggleModal}>
+              X
+            </button>
             </div>
           </div>
         </div>
         </div>
         </Form>
+        </div>
+        </div>
   );
 }
 

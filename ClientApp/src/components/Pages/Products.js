@@ -5,17 +5,17 @@ import './Products.css'
 
 function Products() {
 
-  const [seen, setSeen] = useState(false)
+  const [modal, setModal] = useState(false)
 
     function togglePop () {
-        setSeen(!seen);
+        setModal(!modal);
   
     };
 
   return (
     <div>
      <button onClick={togglePop}>Add Product</button>
-            {seen ? <AddProduct toggle={togglePop} /> : null}
+            {modal ? <AddProduct toggle={togglePop} /> : null}
 
     <Table striped bordered hover>
       <thead>
