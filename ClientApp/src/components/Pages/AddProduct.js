@@ -1,79 +1,40 @@
-import React, {} from 'react';
-import { Button, Dropdown, Form } from 'react-bootstrap';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function AddProduct() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div classname = "modal">
-    <div classname = "overlay">
-    <Form>
-      <div className="mbsc-grid mbsc-grid-fixed">
-        <div className="mbsc-form-group">
-          <div className="mbsc-row mbsc-justify-content-center">
-            <div className="mbsc-col-md-10 mbsc-col-xl-8 mbsc-form-grid">
-              <div className="mbsc-form-group-title">Add Products</div>
-              <div className="mbsc-row">
-                <div className="mbsc-col-md-6 mbsc-col-12">
-                  <Form.Control type="integer" label="barcode" placeholder="Barcode Number" inputStyle="box" labelStyle="floating" />
-                </div>
-              </div>
-              <div className="mbsc-row">
-                <div className="mbsc-col-12">
-                  <Form.Control type="text" label="Address" placeholder="Product Batch" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-12">
-                  <Form.Control type="text" label="Address" placeholder="Product Name" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-12">
-                  <Form.Control type="text" label="Address" placeholder="Product Description" inputStyle="box" labelStyle="floating" />
-                </div>
-              </div>
-              <div className="mbsc-col-md-2 mbsc-col-6">
-                  <Form.Control type="text" label="Zip" placeholder="Cost Price" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-md-2 mbsc-col-6">
-                  <Form.Control type="text" label="Zip" placeholder="Selling Price" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-md-2 mbsc-col-6">
-                  <Form.Control type="text" label="Zip" placeholder="Quantity (Cartons)" inputStyle="box" labelStyle="floating" />
-                </div>
-              <div className="mbsc-row">
-                <div className="mbsc-col-md-6 mbsc-col-12">
-                  <Form.Control type="text" label="City" placeholder="City" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-md-4 mbsc-col-6">
-                  <Dropdown label="Suppliers" inputStyle="box" labelStyle="floating">
-                    <option value="Alabama">Alabama</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Arizona">Arizona</option>
-                    <option value="Arkansas">Arkansas</option>              
-                  </Dropdown>
-                </div>
-                <div className="mbsc-col-md-4 mbsc-col-6">
-                  <Dropdown label="Category" inputStyle="box" labelStyle="floating">
-                    <option value="Alabama">Alabama</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Arizona">Arizona</option>
-                    <option value="Arkansas">Arkansas</option>              
-                  </Dropdown>
-                </div>
-                <div className="mbsc-col-md-2 mbsc-col-6">
-                  <Form.Control type="text" label="Manufacturing Date" placeholder="Manufacturing date" inputStyle="box" labelStyle="floating" />
-                </div>
-                <div className="mbsc-col-md-2 mbsc-col-6">
-                  <Form.Control type="text" label="Expiring Date" placeholder="Expiry Date" inputStyle="box" labelStyle="floating" />
-                </div>
-              </div>
-              <Button>Submit</Button>
-              <button className="close-modal" onClick={toggleModal}>
-              X
-            </button>
-            </div>
-          </div>
-        </div>
-        </div>
-        </Form>
-        </div>
-        </div>
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Add Product
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Add Product</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          I will not close if you click outside me. Do not even try to press
+          escape key.
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary">Understood</Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
 

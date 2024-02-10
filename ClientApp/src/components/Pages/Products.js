@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Table from 'react-bootstrap/Table';
-import AddProduct from './AddProduct';
 import './Products.css'
+import AddProduct from './AddProduct';
 
 function Products() {
 
@@ -14,9 +14,7 @@ function Products() {
 
   return (
     <div>
-     <button onClick={togglePop}>Add Product</button>
-            {modal ? <AddProduct toggle={togglePop} /> : null}
-
+     <AddProduct />
     <Table striped bordered hover>
       <thead>
         <tr>

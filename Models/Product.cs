@@ -31,8 +31,4 @@ namespace pos_system.Models
         public DateTime ExpiringDate { get; set; }
     }
 
-    public class Category
-    {
-        // Define properties for the Categories class if needed.
-    }
 }
