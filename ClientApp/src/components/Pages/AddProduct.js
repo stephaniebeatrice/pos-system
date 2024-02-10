@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
+
 
 function AddProduct() {
   const [show, setShow] = useState(false);
@@ -24,8 +26,16 @@ function AddProduct() {
           <Modal.Title>Add Product</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          I will not close if you click outside me. Do not even try to press
-          escape key.
+        <Form.Control type="text" placeholder="Product Name" />
+      <br />
+      <Form.Control type="text" placeholder="Barcode Number" />
+      <br />
+      <Form.Control type="text" placeholder="Quantity" />
+      <br />
+      <Form.Control type="text" placeholder="Category" />
+      <br />
+      <Form.Control type="text" placeholder="Cost Price" />
+      <br />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
