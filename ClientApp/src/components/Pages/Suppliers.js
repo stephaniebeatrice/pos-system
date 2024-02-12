@@ -1,18 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Table from 'react-bootstrap/Table';
 import AddSupplier from './AddSupplier'
 
 function Suppliers() {
-  const [modal, setModal] = useState(false)
-
-    function togglePop () {
-        setModal(!modal);
-  
-    }; 
+ 
   return (
     <div>
-            <button onClick={togglePop}>Add Supplier</button>
-            {modal ? <AddSupplier toggle={togglePop} /> : null}
+        <AddSupplier />
 
     <Table striped bordered hover>
       <thead>
