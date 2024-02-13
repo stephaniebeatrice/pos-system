@@ -1,8 +1,8 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function AddProduct() {
+function AddCategory() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -23,19 +23,19 @@ function AddProduct() {
         <Modal.Header closeButton>
           <Modal.Title>Modal</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="w-full max-w-sm">
           I will not close if you click outside me. Do not even try to press
           escape key.
         </Modal.Body>
-        <Modal.Footer style={{ justifyContent: 'flex-end' }}>
-          <Button variant="secondary" onClick={handleClose} size="sm" style={{ marginRight: '10px' }}>
+        <Modal.Footer>
+          <button className="bg-slate-400 hover:bg-slate-500 text-black font-bold py-2 px-4 rounded" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" size="sm">Understood</Button>
+          </button>
+          <button  className="bg-purple-600 hover:bg-purple-700 text-black font-bold py-2 px-4 rounded">Understood</button>
         </Modal.Footer>
       </Modal>
     </>
   );
 }
 
-export default AddProduct;
+export default AddCategory;
