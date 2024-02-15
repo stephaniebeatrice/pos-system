@@ -31,34 +31,46 @@ function AddProduct() {
           <Form>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Label>Barcode No</Form.Label>
+                <Form.Control type="text" placeholder="Enter Barcode" />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Label>Product Batch</Form.Label>
+                <Form.Control type="text" placeholder="Batch" />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Label>Product Name</Form.Label>
+                <Form.Control type="text" placeholder="Name" />
               </Form.Group>
             </Row>
 
-            <Form.Group className="mb-3" controlId="formGridAddress1">
-              <Form.Label>Address</Form.Label>
-              <Form.Control placeholder="1234 Main St" />
-            </Form.Group>
-
             <Form.Group className="mb-3" controlId="formGridAddress2">
-              <Form.Label>Address 2</Form.Label>
-              <Form.Control placeholder="Apartment, studio, or floor" />
+              <Form.Label>Product Description</Form.Label>
+              <Form.Control placeholder="More details about product" />
             </Form.Group>
 
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridCity">
-                <Form.Label>City</Form.Label>
+                <Form.Label>Cost Price</Form.Label>
                 <Form.Control />
               </Form.Group>
 
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>Selling Price</Form.Label>
+                <Form.Control />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>Quantity</Form.Label>
+                <Form.Control />
+              </Form.Group>
+              </Row>
+
+              <Row className="mb-3">
               <Form.Group as={Col} controlId="formGridState">
-                <Form.Label>State</Form.Label>
+                <Form.Label>Supplier</Form.Label>
                 <Form.Select defaultValue="Choose..." className='form-control'>
                   <option>Choose...</option>
                   <option>...</option>
@@ -66,7 +78,18 @@ function AddProduct() {
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridZip">
-                <Form.Label>Zip</Form.Label>
+                <Form.Label>Category</Form.Label>
+                <Form.Control />
+              </Form.Group>
+</Row>
+              <Row className="mb-3">
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>Manufacturing Date</Form.Label>
+                <Form.Control />
+              </Form.Group>
+
+              <Form.Group as={Col} controlId="formGridCity">
+                <Form.Label>Expiry Date</Form.Label>
                 <Form.Control />
               </Form.Group>
             </Row>
