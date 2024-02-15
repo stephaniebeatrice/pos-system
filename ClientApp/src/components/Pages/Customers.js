@@ -13,8 +13,7 @@ function Customers() {
 
   return (
     <div>
-     <button onClick={togglePop}>Add Product</button>
-            {seen ? <AddCustomer toggle={togglePop} /> : null}
+    <AddCustomer />
     <Table striped bordered hover>
       <thead>
         <tr>
