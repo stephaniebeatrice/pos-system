@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;  // Add this using statement for DbContextOptions
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer; 
 using pos_system.Data;
+using pos_system.Models;
 
 namespace pos_system
 {
@@ -23,7 +24,7 @@ namespace pos_system
             services.AddControllersWithViews();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))); // Add semicolon here
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"))); 
 
             //services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -55,7 +56,7 @@ namespace pos_system
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                    pattern: "{controller=Product}/{action=Index}/{id?}");
             });
 
             app.UseSpa(spa =>
